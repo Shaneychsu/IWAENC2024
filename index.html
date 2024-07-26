@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+<body>
+<p>&nbsp;</p>
+<center><span style="font-size: 36px;"><br />A Tunable Binaural Audio Telepresence System Capable of Balancing Immersive and Enhanced Modes </span><br />&emsp;
+<table width="850px" align="center">
+<tbody>
+<tr>
+<td align="center" width="200px"><center><span style="font-size: 28px;">Yicheng Hsu and Mingsian R. Bai</span><br />
+<table width="100px" align="center">
+<tbody>
+<tr>
+<td width="10px">&emsp;</td>
+</tr>
+</tbody>
+</table>
+<br /><span style="font-size: 22px;">Department of Power Mechanical Engineering Engineering, National Tsing Hua University, Taiwan</span></center></td>
+</tr>
+</tbody>
+</table>
+</center>
+<p>&emsp;</p>
+<h1>Abstract</h1>
+<table width="750px" align="center">
+<tbody>
+<tr>
+<td align="justify">Binaural Audio Telepresence (BAT) aims to encode the acoustic scene at the far end into binaural signals for the user at the near end. BAT encompasses an immense range of applications that can vary between two extreme modes of Immersive BAT (I-BAT) and Enhanced BAT (E-BAT). With I-BAT, our goal is to preserve the full ambience as if we were at the far end, while with E-BAT, our goal is to enhance the far-end conversation with significantly improved speech quality and intelligibility. To this end, this paper presents a tunable BAT system to vary between these two AT modes with a desired application-specific balance. Microphone signals are converted into binaural signals with prescribed ambience factor. A novel Spatial COherence REpresentation (SCORE) is proposed as an input feature for model training so that the network remains robust to different array setups. Experimental results demonstrated the superior performance of the proposed BAT, even when the array configurations were not included in the training phase.</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<hr />
+<h1>Audio Demos (Five-element microphone array)</h1>
+<h1>Immersive mode</h1>
+<table width="850px" align="center">
+<tbody>
+<tr>
+<td width="270px"><center><small><strong>Noisy signal (T60 = 486 ms)</strong></small> <audio controls="controls"><source src="./Audio/c1_noisy.wav" type="audio/wav" />Your browser does not support the audio element.</audio></center></td>
+<td width="20px">&emsp;</td>
+<td width="270px"><center><small><strong>MIF</strong></small> <audio controls="controls"><source src="./Audio/c1_mif.wav" type="audio/wav" />Your browser does not support the audio element.</audio></center></td>
+<td width="20px">&emsp;</td>
+<td width="270px"><center><small><strong>I-MDF</strong></small> <audio controls="controls"><source src="./Audio/c1_mdf.wav" type="audio/wav" />Your browser does not support the audio element.</audio></center></td>
+<td width="20px">&emsp;</td>
+<td width="270px"><center><small><strong>Proposed method (alpha=1)</strong></small> <audio controls="controls"><source src="./Audio/c1_bat.wav" type="audio/wav" />Your browser does not support the audio element.</audio></center></td>
+<td width="20px">&emsp;</td>
+<td height="5px">&emsp;</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<hr />
+<h1>Enhanced mode</h1>
+<table width="850px" align="center">
+<tbody>
+<tr>
+<td width="270px"><center><small><strong>Noisy signal (T60 = 486 ms)</strong></small> <audio controls="controls"><source src="./Audio/c2_noisy.wav" type="audio/wav" />Your browser does not support the audio element.</audio></center></td>
+<td width="20px">&emsp;</td>
+<td width="270px"><center><small><strong>MIF</strong></small> <audio controls="controls"><source src="./Audio/c2_mif.wav" type="audio/wav" />Your browser does not support the audio element.</audio></center></td>
+<td width="20px">&emsp;</td>
+<td width="270px"><center><small><strong>E-MDF</strong></small> <audio controls="controls"><source src="./Audio/c2_mdf.wav" type="audio/wav" />Your browser does not support the audio element.</audio></center></td>
+<td width="20px">&emsp;</td>
+<td width="270px"><center><small><strong>Proposed method (alpha=0)</strong></small> <audio controls="controls"><source src="./Audio/c2_bat.wav" type="audio/wav" />Your browser does not support the audio element.</audio></center></td>
+<td width="20px">&emsp;</td>
+<td height="5px">&emsp;</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<hr />
+<h1>Tunability</h1>
+<table width="850px" align="center">
+<tbody>
+<tr>
+<td width="270px"><center><small><strong>Proposed method (alpha=0)</strong></small> <audio controls="controls"><source src="./Audio/c3_0.wav" type="audio/wav" />Your browser does not support the audio element.</audio></center></td>
+<td width="20px">&emsp;</td>
+<td width="270px"><center><small><strong>Proposed method (alpha=0.3)</strong></small> <audio controls="controls"><source src="./Audio/c3_0.3.wav" type="audio/wav" />Your browser does not support the audio element.</audio></center></td>
+<td width="20px">&emsp;</td>
+<td width="270px"><center><small><strong>Proposed method (alpha=0.7)</strong></small> <audio controls="controls"><source src="./Audio/c3_0.7.wav" type="audio/wav" />Your browser does not support the audio element.</audio></center></td>
+<td width="20px">&emsp;</td>
+<td width="270px"><center><small><strong>Proposed method (alpha=1)</strong></small> <audio controls="controls"><source src="./Audio/c3_1.wav" type="audio/wav" />Your browser does not support the audio element.</audio></center></td>
+<td width="20px">&emsp;</td>
+<td height="5px">&emsp;</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<hr />
+<script>
+
+</script>
+</body>
+</html>
+<script>
+
+</script>
+</body>
+</html>
